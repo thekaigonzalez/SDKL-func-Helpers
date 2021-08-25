@@ -1,0 +1,5 @@
+func run_safe(f) 
+   if (type(f) == "function") then
+     pcall(function () f() end);
+   end
+end
